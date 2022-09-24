@@ -163,7 +163,7 @@ When deserializing a list of items, errors will be returned as a list of diction
 
 #### Raising an exception on invalid data
 
-The `.is_valid()` method takes an optional `raise_exception` flag that will cause it to raise a `serializers.ValidationError` exception if there are validation errors.
+The `.is_valid()` method takes an optional `raise_exception` keyword-only argument that will cause it to raise a `serializers.ValidationError` exception if there are validation errors.
 
 These exceptions are automatically dealt with by the default exception handler that REST framework provides, and will return `HTTP 400 Bad Request` responses by default.
 
